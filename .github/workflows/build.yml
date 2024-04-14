@@ -15,10 +15,10 @@ jobs:
     - name: Build Kernel
       uses: dabao1955/kernel_build_action@main
       with:
-          kernel-url: https://github.com/AcmeUI-Devices/android_kernel_xiaomi_cas
-          kernel-dir: msm-4.19
-          branch: taffy
-          config: cas_defconfig
+          kernel-url: https://github.com/phhgsi/android_kernel_oneplus_sm6375
+          kernel-dir: sm6375
+          branch: holi-17
+          config: vendor/holi-qgki_defconfig
           arch: arm64
           aosp-gcc: true
           aosp-clang: true
@@ -28,4 +28,4 @@ jobs:
           aosp-clang-version: r383902
           python-27: true
           disable-lto: true
-          anykernel3: true
+          anykernel3: false
